@@ -1,0 +1,6 @@
+<!-- prediction/templates/prediction/predict.html -->
+<form method="post">
+    {% csrf_token %}
+    <textarea name="text" rows="4" cols="50"></textarea>
+    <button type="submit">Predict</button>
+</form>

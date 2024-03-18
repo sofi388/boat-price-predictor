@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            background-color: #3d8388;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #356e72;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 100px 20px;
+        }
+        .left-content, .right-content {
+            width: 45%;
+            padding: 20px;
+            background-color: #3d8388;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .left-content a, .right-content a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 30px;
+            background-color: #3d8388;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        .left-content a:hover, .right-content a:hover {
+            background-color: #31696d;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .github-icon {
+            width: 30px;
+            vertical-align: middle;
+        }
+        .github-link {
+            color: #fff;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="predictor">.Predictor</h1>
+    </div>
+    <div class="content">
+        <div class="left-content">
+            <a href="{% url 'prediction:predict' %}">Make a Prediction</a>  <!-- Namespace in Href! -->
+        </div>
+        <div class="right-content">
+            <a href="{% url 'prediction:info' %}">Information</a>  <!-- Namespace in Change Href! -->
+        </div>
+    </div>
+    <div class="footer">
+        <a class="github-link" href="https://github.com/sofi388">
+            <img class="github-icon" src="https://cdn.iconscout.com/icon/free/png-512/github-154-675675.png" alt="GitHub Icon">
+        </a>
+    </div>
+</body>
+</html>

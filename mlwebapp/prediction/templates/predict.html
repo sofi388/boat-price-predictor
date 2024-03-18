@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Prediction</title>
+    <style>
+        body {
+            background-color: #3d8388; 
+            font-size: 18px; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #356e72; 
+            color: white; 
+            text-align: center;
+            padding: 20px 0;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            margin: 100px auto;
+            width: 80%; 
+            background-color: #3d8388; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(194, 153, 153, 0.5); 
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border:1px solid #ccc;
+        }
+        .form-group input[type="submit"] {
+            background-color: #31696d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px; 
+            font-weight: bold;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 25px;
+            color: white; 
+        }
+        .left-content, .right-content {
+            width: 45%; /* Уменьшаем ширину кнопок */
+            padding: 20px;
+            background-color: #3d8388;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Добавляем отступ снизу */
+            text-align: center; /* Выравниваем текст по центру */
+        }
+        .submit {
+            width: 45%; /* Уменьшаем ширину кнопок */
+            padding: 20px;
+            background-color: #356e72;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Добавляем отступ снизу */
+            text-align: center; /* Выравниваем текст по центру */
+            font-size: 18px; 
+            font-weight: bold;
+            color: white;
+        }
+        .submit:hover {
+            background-color: #31696d; /* Изменение цвета при наведении */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="predictor">Make a Prediction</h1>
+    </div>
+    <div class="content">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="prediction" id="en"><br>Enter your data:</br></label>
+                <br></br>
+                <input type="text" id="prediction" name="prediction" placeholder="Enter your data here">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
