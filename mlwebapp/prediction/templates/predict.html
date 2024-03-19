@@ -88,11 +88,12 @@
         <h1 class="predictor">Make a Prediction</h1>
     </div>
     <div class="content">
-        <form action="" method="post">
+        <form action="{% url 'prediction:submit_form' %}" method="post">
+            {% csrf_token %}
             <div class="form-group">
-                <label for="prediction" id="en"><br>Enter your data:</br></label>
+                <label for="text" id="en"><br>Enter your data:</br></label>
                 <br></br>
-                <input type="text" id="prediction" name="prediction" placeholder="Enter your data here">
+                <input type="text" id="text" name="text" placeholder="Enter your data here">
             </div>
             <div class="form-group">
                 <button type="submit" class="submit">Submit</button>
